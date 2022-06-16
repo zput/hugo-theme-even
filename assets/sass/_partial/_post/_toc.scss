@@ -43,7 +43,8 @@
     }
 
     .toc-link.active {
-      color: $theme-color;
+      color: $toc-active-color;
+      font-weight:bold;
     }
   }
 }

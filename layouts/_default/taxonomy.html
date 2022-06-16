@@ -1,6 +1,7 @@
 {{- define "title" }}{{ .Title }} · {{ .Site.Title }}{{ end -}}
 
 {{- define "content" }}
+<!-- 这个tags中的某个标签列出来的list页面 ![20220619161655](https://raw.githubusercontent.com/zput/myPicLib/master/zput.github.io/20220619161655.png)  -->
 {{- $paginator := .Paginate .Data.Pages .Site.Params.archivePaginate -}}
 <section id="archive" class="archive">
   {{ if not $paginator.HasPrev -}}

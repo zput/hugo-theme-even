@@ -1,6 +1,8 @@
+
 {{- define "title" }}{{ T .Data.Plural }} - {{ .Site.Title }}{{ end -}}
 
 {{- define "content" -}}
+  <!-- ***这个是categories/tags的展示页面的内容 ![20220619162719](https://raw.githubusercontent.com/zput/myPicLib/master/zput.github.io/20220619162719.png)*** -->
   {{ $name := .Data.Plural -}}
   {{ $terms := .Data.Terms.ByCount -}}
   {{ $length := len $terms -}}
