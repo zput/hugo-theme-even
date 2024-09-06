@@ -7,6 +7,8 @@
 
     {{- if .Title }}
       <h1 class="post-title"><a class="post-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+    {{- else }}
+    <p>标题不存在或者为空</p>
     {{- end }}
 
       <div class="post-meta">
