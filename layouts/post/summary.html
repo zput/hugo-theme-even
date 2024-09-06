@@ -3,14 +3,7 @@
 {{- if .Title }}
 
   <header class="post-header">
-
-
-    {{- if .Title }}
       <h1 class="post-title"><a class="post-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-    {{- else }}
-    <p>标题不存在或者为空</p>
-    {{- end }}
-
       <div class="post-meta">
         <span class="post-time"> {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} </span>
         {{ with .Params.categories -}}
